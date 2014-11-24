@@ -7,10 +7,10 @@
   <default revision="refs/tags/android-5.0.0_r7"
            remote="aosp"
            sync-j="4" />
-		   
+
    <remote name="github"
 		   fetch="http://github.com" />
-		   
+
    <remote name="venture"
 		   fetch="http://github.com/VentureROM-L" />
 
@@ -29,9 +29,19 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs" />
+
+  <!-- VentureROM Device Trees -->
   <project path="device/asus/flo" name="android_device_asus_flo" remote="venture" revision="lollipop" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
   <project path="device/asus/grouper" name="android_device_asus_grouper" remote="venture" revision="lollipop" groups="device,grouper" />
+  <project path="device/lge/mako" name="android_device_lge_mako" remote="venture" revision="lollipop" groups="device,mako" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="venture" revision="lollipop" groups="device,hammerhead" />
+
+  <!-- VentureROM Kernel Trees -->
+  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
+  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" clone-depth="1" />
+  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" />
+
+  <!-- Other device repos -->
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -48,12 +58,10 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="venture" revision="lollipop" groups="device,hammerhead" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" clone-depth="1" />
-  <project path="device/lge/mako" name="android_device_lge_mako" remote="venture" revision="lollipop" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
+
+  <!-- External repos -->
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
@@ -275,6 +283,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
+
+  <!-- Frameworks repo -->
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="frameworks/base" name="android_frameworks_base" remote="venture" revision="lollipop" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
@@ -312,6 +322,8 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
+
+  <!-- Hardware repos -->
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
@@ -353,9 +365,12 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
+
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
+
+  <!-- Application repos -->
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
@@ -428,7 +443,10 @@
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
+
   <project path="pdk" name="platform/pdk" groups="pdk" />
+
+  <!-- Prebuilt repos -->
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
@@ -481,7 +499,10 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
+
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
+
+  <!-- System repos -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="venture" revision="lollipop" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="venture" revision="lollipop" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
@@ -489,6 +510,8 @@
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
+
+  <!-- Tool repos -->
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -504,7 +527,13 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  
   <!-- Venture Repos -->
   <project path="vendor/venture" name="android_vendor_venture" remote="venture" revision="lollipop" />
+
+  <!-- Vendor projects -->
+  <project path="vendor/lge" name="android_vendor_lge" remote="venture" revision="lollipop" />
+  <project path="vendor/asus" name="android_vendor_asus" remote="venture" revision="lollipop" />
+  <project path="vendor/qcom" name="android_vendor_qcom" remote="venture" revision="lollipop" />
+  <project path="vendor/broadcom" name="android_vendor_broadcom" remote="venture" revision="lollipop" />
+
 </manifest>
