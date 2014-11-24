@@ -1,4 +1,4 @@
-android_manifest
+Venture Manifest
 ================
 
-Manifest :) 
+Instructions soon
