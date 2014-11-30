@@ -538,5 +538,6 @@
   <project path="vendor/asus" name="android_vendor_asus" remote="venture" revision="lollipop" />
   <project path="vendor/qcom" name="android_vendor_qcom" remote="venture" revision="lollipop" />
   <project path="vendor/broadcom" name="android_vendor_broadcom" remote="venture" revision="lollipop" />
+  <project path="vendor/moto" name="android_vendor_moto" remote="venture" revision="lollipop" />
 
 </manifest>
