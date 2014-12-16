@@ -528,7 +528,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="vendor/pa" name="VentureROM-L/android_vendor_venture" remote="github" revision="legacy" >
+  <project path="vendor/venture" name="VentureROM-L/android_vendor_venture" remote="github" revision="legacy" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
