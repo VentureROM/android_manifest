@@ -22,7 +22,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="manifest" name="VentureROM-L/manifest" remote="github" revision="legacy" />
+  <project path="manifest" name="VentureROM-L/android_manifest" remote="github" revision="legacy" />
   <project path="build" name="VentureROM-L/android_build" remote="github" revision="legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -528,7 +528,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="vendor/pa" name="VentureROM-L/android_vendor_pa" remote="github" revision="legacy" >
+  <project path="vendor/pa" name="VentureROM-L/android_vendor_venture" remote="github" revision="legacy" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
