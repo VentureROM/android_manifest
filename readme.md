@@ -80,6 +80,7 @@ $ cd WORKSPACE
 
 # Create a new branch on the specific project you are going to work on
 # For example, `repo start fix-clock AOSPA/android_frameworks_base`
+
 $ repo start BRANCH VentureROM-L/PROJECT
 
 # Go inside the project you are working on
@@ -94,6 +95,7 @@ $ git commit -a
 
 # Upload your changes
 $ cd WORKSPACE
+
 $ repo upload VentureROM-L/PROJECT
 ```
 
