@@ -30,6 +30,9 @@ $ cd android
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
+$ repo init -u https://github.com/VentureROM-L/android_manifest -b legacy
+
+# If you want to sync and build for Nexus devices use: 
 $ repo init -u https://github.com/VentureROM-L/android_manifest -b lollipop
 ```
 
