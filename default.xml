@@ -24,6 +24,7 @@
   <remote name="venture"
 	  fetch="http://github.com/VentureROM-L" />
 
+  <project path="manifest" name="android_manifest" remote="venture" revision="legacy" />
   <project path="build" name="android_build" remote="venture" revision="legacy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
