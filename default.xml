@@ -58,7 +58,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="cm" revision="cm-12.0" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="venture" revision="legacy" />
   <project path="device/sample" name="device/sample" groups="pdk" />
 
   <!-- External repos -->
